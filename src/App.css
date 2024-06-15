@@ -11,12 +11,6 @@
   gap: 60px;
   justify-content: center;
   margin-top: 85px;
-  
-  .navbartop_main{
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-  }
   a{
     text-decoration: none;
     font-size: 20px;
@@ -24,6 +18,12 @@
     color: #666666;
   }
 
+}
+
+.navbartop_main{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
 }
 
 .icongroup{
