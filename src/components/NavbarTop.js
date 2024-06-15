@@ -4,7 +4,7 @@ import Icongroup from "./Icongroup";
 function NavbarTop(props){
     return(
         <div className={`navbartop ${props.addclass}`}>
-            <div className="navbarop_main">
+            <div className="navbartop_main">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="#techstack">Tech Stack</a>
