@@ -5,7 +5,7 @@ function Iconlink(props){
 
         <div className="iconlink">
             <img src={props.img} alt="link" />
-            <a href="">{props.text}</a>
+            <a href="arundath.netlify.app">{props.text}</a>
         </div>
 
     );
