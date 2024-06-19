@@ -1,21 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import Icongroup from "./Icongroup";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-function NavbarTop(props){
-    return(
-        <div className={`navbartop ${props.addclass}`}>
+function NavbarTop(props) {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    return (
+        <nav className={`navbartop ${props.addclass}`}>
             <div className="navbartop_main">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="#techstack">Tech Stack</a>
-                <a href="#projects">Projects</a>
-                <a href="/contact">Contact</a>
+                <HashLink smooth to="/#root">Home</HashLink>
+                <Link to="/about">About</Link>
+                <HashLink smooth to="/#techstack">Tech Stack</HashLink>
+                <HashLink smooth to="/#projects">Projects</HashLink>
+                <Link to="/contact">Contact</Link>
+            </div>
+
+            <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+            </div>
+
+            <div className={`fullscreen-menu ${menuOpen ? 'open' : ''}`}>
+                <div className="menu-items">
+                    <HashLink smooth to="/#root" onClick={toggleMenu}>Home</HashLink>
+                    <Link to="/about" onClick={toggleMenu}>About</Link>
+                    <HashLink smooth to="/#techstack" onClick={toggleMenu}>Tech Stack</HashLink>
+                    <HashLink smooth to="/#projects" onClick={toggleMenu}>Projects</HashLink>
+                    <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+                </div>
             </div>
 
             <Icongroup />
-
-        </div>
-
+        </nav>
     );
 }
 
