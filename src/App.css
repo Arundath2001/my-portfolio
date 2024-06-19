@@ -599,34 +599,36 @@ h5{
       height: 160px;
     }
   }
+
+  .techstack{
+    gap: 50px;
+  }
+  
+  .techstack_img{
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .techstack_img img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .project_row{
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .projectcard{
+    width: 100%;
+  }
+  
+  .linenavbar{
+    padding: 0px;
+  }
 }
 
-.techstack{
-  gap: 50px;
-}
 
-.techstack_img{
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-.techstack_img img{
-  width: 50px;
-  height: 50px;
-}
-
-.project_row{
-  flex-direction: column;
-  margin-top: 40px;
-}
-
-.projectcard{
-  width: 100%;
-}
-
-.linenavbar{
-  padding: 0px;
-}
 
 @media (max-width: 480px) {
   
