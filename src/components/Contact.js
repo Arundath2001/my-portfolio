@@ -1,6 +1,4 @@
 import React from "react";
-import NavbarTop from "./NavbarTop";
-import Linenavbar from "./Linenavbar";
 
 function Contact(){
     return(

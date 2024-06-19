@@ -5,7 +5,7 @@ function Iconlink(props){
 
         <div className="iconlink">
             <img src={props.img} alt="link" />
-            <a target="_blank" href={props.link}>{props.text}</a>
+            <a target="_blank" rel="noreferrer" href={props.link}>{props.text}</a>
         </div>
 
     );
