@@ -3,7 +3,7 @@ import Workcard from "./Workcard";
 
 function Education(){
 
-    const education = [{ course : "Bachelor in Electronics & Communication" , type : "Full Time"  , college : "APJ Abdul Kalam Technological University" , date : "2019 - 2023"}];
+    const education = [{ course : "Bachelor in Technology" , type : "Full Time"  , college : "APJ Abdul Kalam Technological University" , date : "2019 - 2023"}];
 
     return(
         <div className="education">

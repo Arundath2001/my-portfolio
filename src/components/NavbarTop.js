@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Icongroup from "./Icongroup";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -9,6 +9,14 @@ function NavbarTop(props) {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [menuOpen]);
 
     return (
         <nav className={`navbartop ${props.addclass}`}>

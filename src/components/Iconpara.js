@@ -5,7 +5,7 @@ function Iconpara(props){
     return(
         <div className="iconpara">
             
-            <img src={props.img} alt={props} />
+            <img src={props.img} alt={props.text} />
             <p className="iconpara_text">{props.text}</p>   
         </div>
     );
