@@ -5,6 +5,43 @@
   margin: 0px;
 }
 
+.message-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.message-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.message-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.message-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.success-message, .error-message {
+  padding: 10px;
+  background-color: #dff0d8; /* Bootstrap success alert background */
+  border: 1px solid #d0e9c6; /* Bootstrap success alert border */
+  color: #3c763d; /* Bootstrap success alert text color */
+  margin-top: 10px;
+}
+
+.error-message {
+  background-color: #f2dede; /* Bootstrap error alert background */
+  border: 1px solid #ebccd1; /* Bootstrap error alert border */
+  color: #a94442; /* Bootstrap error alert text color */
+}
+
+
 .navbartop{
   display: flex;
   flex-direction: row;
