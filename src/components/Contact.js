@@ -24,7 +24,7 @@ const ContactForm = () => {
         setLoading(true);
 
         try {
-            const response = await axios.post('https://bitter-wood-beat.glitch.me/', formData);
+            const response = await axios.post('http://localhost:5000/sendEmail', formData);
             console.log('Email sent:', response.data);
             setLoading(false);
             // Show success message using SweetAlert2
