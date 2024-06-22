@@ -1051,15 +1051,15 @@ form{
   .smallcard_circle1 {
     width: 70px;
     height: 70px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 25px;
+    right: 30px;
   }
 
   .smallcard_circle2 {
-  width: 140px;
-  height: 140px;
-  bottom: -40px;
-  right: -45px;
+    bottom: -35px;
+    height: 110px;
+    right: -20px;
+    width: 110px;
   }
 
   .smallcard_icons{
