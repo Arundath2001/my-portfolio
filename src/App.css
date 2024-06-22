@@ -596,12 +596,12 @@ h5{
 
 .smallcard .smallcard_text{
   gap: 25px;
-  
-  p{
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 400;
-  }
+}
+
+.smallcard_text p{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .smallcard_down{
@@ -899,6 +899,7 @@ form{
 
   .smallcard .smallcard_mainpara{
     text-align: center;
+    font-size: 14px;
   }
 
 }
@@ -1076,8 +1077,23 @@ form{
     margin-bottom: 10px;
   }
 
-  .smallcard_text{
+  .smallcard .smallcard_text{
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .smallcard .smallcard_mainpara{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .smallcard_text a{
+    font-size: 12px;
+  }
+
+  .smallcard_text p{
+    font-size: 12px;
   }
 
 }
