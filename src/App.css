@@ -1096,4 +1096,14 @@ form{
     font-size: 12px;
   }
 
+  h5{
+    font-size: 25px;
+  }
+
+  .about{
+    .about_para{
+      font-size: 13px;
+    }
+  }
+
 }
