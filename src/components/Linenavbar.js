@@ -1,5 +1,6 @@
 import React from "react";
-import NavbarTop from "./NavbarTop";
+import Navbar from "./Navbar";
+import Icongroup from "./Icongroup";
 
 function Linenavbar(){
 
@@ -8,7 +9,11 @@ function Linenavbar(){
             <div className="linenavbar_line">
 
             </div>
-            <NavbarTop addclass="linenavbar_nav" />
+            <div className="linenavbar_nav">
+                <Navbar />
+                <Icongroup />
+            </div>
+
         </div>
     );
 

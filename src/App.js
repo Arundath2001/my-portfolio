@@ -14,6 +14,7 @@ function App() {
       <div className="App">
         <NavbarTop />
 
+        <div className='main'>
         <Routes>
           <Route 
             path="/" 
@@ -30,6 +31,7 @@ function App() {
         </Routes>
 
         <Linenavbar />
+        </div>
       </div>
     </Router>
   );

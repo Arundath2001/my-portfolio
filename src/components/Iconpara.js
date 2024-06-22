@@ -3,10 +3,13 @@ import React from "react";
 function Iconpara(props){
 
     return(
-        <div className="iconpara">
+        <div className={`iconpara ${props.addclass}`}>
             
             <img src={props.img} alt={props.text} />
-            <p className="iconpara_text">{props.text}</p>   
+            {
+                props.mail ? <a href={`mailto:${props.mail}`}>{props.mail}</a> : <p className="iconpara_text">{props.text}</p>
+            }  
+               
         </div>
     );
 
