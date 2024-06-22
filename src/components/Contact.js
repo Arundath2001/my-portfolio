@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Contactform from './Contactform';
 import Smallcard from './Smallcard';
 
