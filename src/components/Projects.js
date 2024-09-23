@@ -12,7 +12,7 @@ import './Projects.css';
 function Projects() {
     const projects = [{
         img: Bhoomika,
-        title: "Artiq Design Landing Page",
+        title: "Real Estate Website",
         content: "Develop a real estate website where users can seamlessly browse available properties, schedule viewings, and list their own properties for sale. Additionally, create an admin panel to manage website content, handle property listings, view enquiries, and oversee other administrative functions to ensure smooth operation and user satisfaction.",
         techstack: "React, JavaScript, CSS, Node",
         live: "https://www.bhoomikarealestate.com/",
