@@ -1,0 +1,26 @@
+.projects {
+    padding: 20px; 
+}
+
+.project_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.projectcard {
+    flex: 0 1 calc(33.33% - 20px); 
+    box-sizing: border-box; 
+}
+
+@media (max-width: 768px) {
+
+    .projects{
+        padding: 0;
+    }
+
+    .projectcard {
+        flex: 0 1 100%; 
+    }
+}

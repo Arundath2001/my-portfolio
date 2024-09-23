@@ -397,10 +397,6 @@
 
 .project_row{
   margin-top: 105px;
-  display: flex;
-  flex-direction: row;
-  gap: 35px;
-  justify-content: center;
 }
 
 .linenavbar{

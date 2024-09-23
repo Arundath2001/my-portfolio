@@ -4,14 +4,39 @@ import Projectcard from "./Projectcard";
 import note from "../assets/note.png";
 import beinex from "../assets/beinex.png";
 import cubegame from "../assets/cubegame.png";
+import rohith from "../assets/rohith.png";
+import Bhoomika from "../assets/Bhoomika.png";
+import Artiq from "../assets/Artiq.png";
+import './Projects.css';
 
 function Projects() {
-    const projects = [
+    const projects = [{
+        img: Bhoomika,
+        title: "Artiq Design Landing Page",
+        content: "Develop a real estate website where users can seamlessly browse available properties, schedule viewings, and list their own properties for sale. Additionally, create an admin panel to manage website content, handle property listings, view enquiries, and oversee other administrative functions to ensure smooth operation and user satisfaction.",
+        techstack: "React, JavaScript, CSS, Node",
+        live: "https://www.bhoomikarealestate.com/",
+        code: "https://github.com/Arundath2001/bhoomika2024"
+        },{
+        img: Artiq,
+        title: "Artiq Design Landing Page",
+        content: "Developed a visually stunning landing page for Artiq Design Studio, showcasing their diverse design services. The site features an elegant layout, intuitive navigation, and eye-catching visuals, providing a compelling and seamless digital experience for the brand.",
+        techstack: "React, JavaScript, CSS",
+        live: "https://artiqdesignstudio.netlify.app/",
+        code: "https://github.com/Arundath2001/Artiq-design-studio"
+        },{
+        img: rohith,
+        title: "Portfolio Website",
+        content: "Developed an engaging portfolio website, showcasing skills, projects, and achievements. The site features a clean layout, user-friendly navigation, and dynamic visuals, creating an impressive online presence that highlights work and expertise.",
+        techstack: "React, JavaScript, CSS",
+        live: "https://rohithrameshan.netlify.app/",
+        code: "https://github.com/Arundath2001/rohith_portfolio"
+        },
         {
             img: note,
             title: "Keeper Website",
             content: "Boost your note-taking efficiency with our carefully designed Keeper App, tailored for smooth and intuitive personal note management. Effortlessly create, view, and delete notes, ensuring a clutter-free and organized workflow.",
-            techstack: "HTML, JavaScript, CSS, React",
+            techstack: "JavaScript, CSS, React",
             live: "https://setnotes.netlify.app/",
             code: "https://github.com/Arundath2001/Keeper"
         },
