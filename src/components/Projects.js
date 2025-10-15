@@ -3,7 +3,6 @@ import Headmain from "./Headmain";
 import Projectcard from "./Projectcard";
 import note from "../assets/note.png";
 import beinex from "../assets/beinex.png";
-import cubegame from "../assets/cubegame.png";
 import rohith from "../assets/rohith.png";
 import Bhoomika from "../assets/Bhoomika.png";
 import Artiq from "../assets/Artiq.png";
