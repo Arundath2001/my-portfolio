@@ -1,0 +1,150 @@
+.home-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 60px auto 60px auto;
+  opacity: 0;
+  animation: fadeInHome 1s forwards;
+  flex-wrap: wrap; 
+}
+
+.home-left {
+  transition: margin-top 1.5s;
+  max-width: 500px;
+}
+
+.home-left h1 {
+  font-size: 58px;
+  font-weight: 700;
+  color: #42446e;
+  line-height: 1.3;
+}
+
+.home-name-gradient {
+  background: linear-gradient(120.37deg, #13b0f5 40.47%, #e70faa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 10.5s;
+}
+
+.home-wave {
+  display: inline-block;
+  animation: waveHand 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+.home-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 280px;
+}
+
+.home-devcard {
+  padding: 25px 30px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-devcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.home-devicon-wrapper {
+  margin-bottom: 15px;
+}
+
+.home-devicon {
+  color: #555;
+}
+
+.home-devcard h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.home-devcard p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes waveHand {
+  0%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+}
+
+@keyframes fadeInHome {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.home-section:hover .home-left {
+  margin-top: 30px;
+}
+
+.home-section:hover .home-name-gradient {
+  background: linear-gradient(90deg, #e70faa 5.47%, #13b0f5 62.09%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline;
+  color: transparent;
+}
+
+
+@media (max-width: 1024px) {
+  .home-left h1 {
+    font-size: 35px;
+  }
+
+  .home-section {
+    gap: 45px;
+    margin: 0px;
+  }
+
+  .home-devcard {
+    padding: 20px 25px;
+    max-width: 280px;
+  }
+
+  .home-devicon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .home-devcard p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .home-left h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .home-devcard {
+    width: 90%;
+  }
+}
